@@ -1,0 +1,17 @@
+name: smartdns
+services:
+  smartdns:
+    image: cuile/smartdns
+    build: 
+      context: .
+      dockerfile: ./docker/dockerfile
+    container_name: smartdns
+    environment:
+      - HTTP_USER=foo
+      - HTTP_PASS=bar
+    volumes:
+      - ./conf/smartdns.conf:/etc/smartdns.conf
+    ports:
+      - 53:53/udp
+      - 5380:8080
+    restart: always
