@@ -1,6 +1,6 @@
 # Docker-SmartDNS
 
-SmartDNS in docker container, configurable via a simple webUI.
+SmartDNS in docker container, configurable via a simple WebUI.
 
 ## Software
 - Alpine Linux: 3.21
