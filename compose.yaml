@@ -4,7 +4,7 @@ services:
     image: cuile/smartdns
     build: 
       context: .
-      dockerfile: ./docker/dockerfile
+      dockerfile: ./docker/Dockerfile
     container_name: smartdns
     environment:
       - HTTP_USER=foo
